@@ -1,7 +1,7 @@
 window.onload = () => {
     const ordnerList = document.getElementById('ordner')
 
-    fetch('/klassenordner.json').then(res => {
+    fetch('klassenordner.json').then(res => {
         res.json().then(data => {
             const entries = parseEntries(data)
             const current = getEntryForDate(entries, new Date())

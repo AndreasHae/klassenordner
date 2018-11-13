@@ -5,10 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Wer ist Klassenordner?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        * {
+            font-family: Roboto, sans-serif;
+        }
+
+        body {
+            margin: 5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            text-align: center;
+            margin: 2em 0;
+            font-size: 2em;
+        }
+    </style>
     <script src="main.js"></script>
 </head>
 <body>
-    <p>Klassenordner für diese Woche sind:</p>
+    <h1>Klassenordner für diese Woche sind:</h1>
     <ul id="ordner"></ul>
 </body>
 </html>
